@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navigation with Logo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <!-- Brand Logo -->
+        <div class="logo-container">
+          <a href="home.html" class="logo-link">
+            <img src="A.png" alt="Brand Logo" class="logo-img" />
+            <span class="logo-text">Rishabh_singh</span>
+          </a>
+        </div>
+
+        <!-- Desktop Menu -->
+        <ul class="main-menu">
+          <li>
+            <a href="home.html" class="nav-link"
+              ><i class="fas fa-home"></i> Home</a
+            >
+          </li>
+          <li>
+            <a href="About.html" class="nav-link"
+              ><i class="fas fa-info-circle"></i> About</a
+            >
+          </li>
+          <li>
+            <a href="#hero3" class="nav-link"
+              ><i class="fas fa-cogs"></i> Services</a
+            >
+          </li>
+          <li>
+            <a href="#hero4" class="nav-link"
+              ><i class="fas fa-briefcase"></i> Portfolio</a
+            >
+          </li>
+          <li>
+            <a href="#hero5" class="nav-link"
+              ><i class="fas fa-envelope"></i> Contact</a
+            >
+          </li>
+        </ul>
+
+        <!-- Mobile Menu Button -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+          <img src="A.png" alt="Brand Logo" class="mobile-logo" />
+          <span class="mobile-logo-text">BrandName</span>
+        </div>
+        <a href="#hero" class="mobile-nav-link"
+          ><i class="fas fa-home"></i> Home</a
+        >
+        <a href="#hero2" class="mobile-nav-link"
+          ><i class="fas fa-info-circle"></i> About</a
+        >
+        <a href="#hero3" class="mobile-nav-link"
+          ><i class="fas fa-cogs"></i> Services</a
+        >
+        <a href="#hero4" class="mobile-nav-link"
+          ><i class="fas fa-briefcase"></i> Portfolio</a
+        >
+        <a href="#hero5" class="mobile-nav-link"
+          ><i class="fas fa-envelope"></i> Contact</a
+        >
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+      <section id="hero" class="hero section">
+        <h1>GitHub</h1>
+        <p>
+          <strong>GitHub: A Complete Ecosystem</strong>
+          <br />
+          <em>A version control tool, social network for developers, and project management suite.</em>
+        </p>
+        <h2>1. The Core: Version Control (Git)</h2>
+        <p>GitHub is built on <strong>Git</strong>. This is the engine that tracks changes.</p>
+        <ul>
+          <li><strong>Repository (Repo):</strong> Your project's master folder. It stores every file and the entire "history" of every change ever made.</li>
+          <li><strong>Commit:</strong> A snapshot of your work at a specific moment. Each commit has a unique ID and a message explaining the change.</li>
+          <li><strong>Branching:</strong> Creating a "parallel world" of your code. You can build a new feature on a branch without touching the "Main" (working) code.</li>
+          <li><strong>Merging:</strong> Combining the changes from one branch back into the Main branch once they are finished and tested.</li>
+        </ul>
+        
+        <h2>2. Collaboration Tools</h2>
+        <p>GitHub makes it possible for 100 people to work on the same file at the same time without overwriting each other.</p>
+        <ul>
+          <li><strong>Pull Requests (PR):</strong> This is a "request" to merge your code. It opens a discussion page where others can review your code, leave comments, and suggest fixes.</li>
+          <li><strong>Forks:</strong> A personal copy of someone else's project. You "fork" a repo to experiment or contribute to someone else's work.</li>
+          <li><strong>Issues:</strong> A built-in "To-Do" list. People use Issues to report bugs, request new features, or assign tasks to team members.</li>
+          <li><strong>Discussions:</strong> A forum-style space for questions and community chat that isn't strictly about "fixing bugs."</li>
+        </ul>
+        
+        <h2>3. Automation & Developer Tools</h2>
+        <p>GitHub isn't just for storage; it’s for <strong>building and deploying</strong> software.</p>
+        <ul>
+          <li><strong>GitHub Actions (CI/CD):</strong> This allows you to write scripts that run automatically. For example: "Every time I push code, run a test to make sure it doesn't crash."</li>
+          <li><strong>GitHub Copilot:</strong> An AI coding assistant that suggests lines of code and entire functions inside your editor.</li>
+          <li><strong>GitHub Pages:</strong> A free service that hosts your website directly from a repository. If you have an `index.html` file, GitHub can make it a live website (e.g., `username.github.io`).</li>
+          <li><strong>Codespaces:</strong> A full development environment that runs in your browser. You can code on a tablet or a weak laptop because the "heavy lifting" happens on GitHub's servers.</li>
+        </ul>
+        
+        <h2>4. Security & Quality Control</h2>
+        <p>GitHub includes "guardian" tools to keep your code safe.</p>
+        <ul>
+          <li><strong>Dependabot:</strong> Automatically scans your project for "dependencies" (third-party code) that have security holes and offers to fix them for you.</li>
+          <li><strong>Secret Scanning:</strong> If you accidentally upload a password or an API key, GitHub will detect it immediately and alert you (or block the upload).</li>
+          <li><strong>Code Scanning:</strong> Analyzes your code for common mistakes or security vulnerabilities before you merge it.</li>
+        </ul>
+        
+        <h2>5. Pricing & Account Types</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Plan</th>
+              <th>Price</th>
+              <th>Best For</th>
+              <th>Key Features</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Free</strong></td>
+              <td>$0</td>
+              <td>Individuals/Students</td>
+              <td>Unlimited public/private repos, 2,000 Action mins/mo.</td>
+            </tr>
+            <tr>
+              <td><strong>Team</strong></td>
+              <td>$4/user/mo</td>
+              <td>Small Startups</td>
+              <td>Protected branches, 3,000 Action mins, draft PRs.</td>
+            </tr>
+            <tr>
+              <td><strong>Enterprise</strong></td>
+              <td>$21/user/mo</td>
+              <td>Big Companies</td>
+              <td>Advanced security, SAML (Single Sign-On), audit logs.</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <h2>6. The "Social" Aspect</h2>
+        <ul>
+          <li><strong>Stars:</strong> Similar to a "Like" or a "Bookmark." It shows how popular a project is.</li>
+          <li><strong>Following:</strong> You can follow developers to see what they are working on.</li>
+          <li><strong>Profile README:</strong> A custom page that introduces you to the world (your "Developer Resume").</li>
+          <li><strong>The Contribution Graph:</strong> The famous "Green Squares" that track how often you code.</li>
+        </ul>
+        
+        <h3>The "Golden Rule" of GitHub</h3>
+        <p><strong>Never push your code directly to the "Main" branch.</strong> Always create a <strong>Branch</strong>, make your changes, and open a <strong>Pull Request</strong>. This is called the <strong>GitHub Flow</strong>, and it is how professional software is built.</p>
+        
+        <p>Would you like me to create a <strong>step-by-step checklist</strong> for your first project to ensure you use all these features correctly?</p>
+
+        <div class="folder-image">
+          <img src="A2.png" alt="Folder Structure" style="height:10vh;" />
+        </div>
+
+        <div class="github-link">
+          <p>Visit my GitHub profile: <a href="https://github.com/yourusername" target="_blank">GitHub Profile</a></p>
+        </div>
+
+        <div class="search-github">
+          <input type="text" placeholder="Search GitHub Profile" />
+          <button type="button">Search</button>
+        </div>
+        </p>
+      </section>
+      <section id="hero2" class="hero2 section">
+        <h1>Vscode</h1>
+        <p>
+          <strong>Visual Studio Code (VS Code): The Developer's Swiss Army Knife</strong>
+          <br />
+          <em>A lightweight yet powerful code editor that has become the industry standard for modern software development.</em>
+        </p>
+        
+        <h2>1. Core Features & Interface</h2>
+        <p>VS Code is built on a philosophy of simplicity with depth. Its intuitive interface includes:</p>
+        <ul>
+          <li><strong>IntelliSense:</strong> AI-powered code completion that predicts variables, functions, and syntax as you type.</li>
+          <li><strong>Syntax Highlighting:</strong> Color-coded text that makes code readable and helps identify errors at a glance.</li>
+          <li><strong>Integrated Terminal:</strong> Built-in command line to run scripts, install packages, and execute Git commands without leaving the editor.</li>
+          <li><strong>Debug Mode:</strong> Set breakpoints, inspect variables, and step through code line-by-line to find and fix bugs.</li>
+          <li><strong>Source Control Panel:</strong> Native Git integration to commit, push, and manage branches directly from VS Code.</li>
+        </ul>
+
+        <h2>2. Extensions & Customization</h2>
+        <p>The Extensions Marketplace transforms VS Code into a specialized tool for any programming language or framework.</p>
+        <ul>
+          <li><strong>Language Support:</strong> Extensions for Python, JavaScript, C++, Java, Go, Rust, and 50+ other languages.</li>
+          <li><strong>Framework Tools:</strong> React, Vue, Angular, Django, Flask—with real-time linting and formatting.</li>
+          <li><strong>Productivity Boosters:</strong> Prettier (code formatting), ESLint (code quality), LiveShare (collaborative coding).</li>
+          <li><strong>Theme & UI Customization:</strong> Personalize colors, fonts, and layout to match your workflow.</li>
+          <li><strong>GitHub Integration:</strong> GitHub Copilot extension provides AI-powered code suggestions and entire function generation.</li>
+        </ul>
+
+        <h2>3. Integration with Git & GitHub</h2>
+        <p>VS Code seamlessly connects to GitHub, making version control effortless.</p>
+        <ul>
+          <li><strong>Source Control Management:</strong> Stage, commit, and push changes with a visual interface.</li>
+          <li><strong>Branch Switching:</strong> Create, switch, and merge branches without touching the command line.</li>
+          <li><strong>Pull Request Management:</strong> Review and approve PRs directly from the editor using GitHub Pull Requests extension.</li>
+          <li><strong>Conflict Resolution:</strong> Visual merge conflict resolution with side-by-side comparison.</li>
+          <li><strong>GitHub Authentication:</strong> Sign in with your GitHub account to access private repositories securely.</li>
+        </ul>
+
+        <h2>4. Professional Development Workflow</h2>
+        <ul>
+          <li><strong>Project Structure Navigation:</strong> Explorer panel shows file hierarchy for quick access to any file.</li>
+          <li><strong>Multi-Root Workspaces:</strong> Work on multiple projects simultaneously in a single window.</li>
+          <li><strong>Task Automation:</strong> Define custom tasks for building, testing, and deploying applications.</li>
+          <li><strong>REST Client & API Testing:</strong> Test APIs directly in VS Code without switching to Postman.</li>
+          <li><strong>Database Integration:</strong> Connect to databases and execute queries within the editor.</li>
+        </ul>
+
+        <h2>5. Performance & Scalability</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Aspect</th>
+              <th>VS Code Advantage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>File Size Handling</strong></td>
+              <td>Efficiently handles projects with thousands of files without lag.</td>
+            </tr>
+            <tr>
+              <td><strong>Memory Usage</strong></td>
+              <td>Lightweight compared to full IDEs like Visual Studio or IntelliJ.</td>
+            </tr>
+            <tr>
+              <td><strong>Startup Time</strong></td>
+              <td>Opens instantly, even on older machines.</td>
+            </tr>
+            <tr>
+              <td><strong>Remote Development</strong></td>
+              <td>Access remote servers, containers, and WSL environments transparently.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>6. Advanced Collaboration Features</h2>
+        <ul>
+          <li><strong>Live Share:</strong> Pair program with team members in real-time with shared editing and debugging sessions.</li>
+          <li><strong>CodePen Integration:</strong> Preview HTML/CSS/JavaScript changes instantly in a side panel.</li>
+          <li><strong>Comments & Annotations:</strong> Leave inline comments in the editor for team communication.</li>
+        </ul>
+
+        <h2>7. Popular VS Code Extensions for Professionals</h2>
+        <ul>
+          <li><strong>GitHub Copilot:</strong> AI code suggestions and function generation.</li>
+          <li><strong>ESLint & Prettier:</strong> Enforce code quality and auto-format code.</li>
+          <li><strong>Docker:</strong> Manage containers and deploy applications.</li>
+          <li><strong>Thunder Client / REST Client:</strong> Test API endpoints directly.</li>
+          <li><strong>Peacock:</strong> Color-code workspaces for better organization.</li>
+          <li><strong>GitLens:</strong> Advanced Git blame and history tracking.</li>
+        </ul>
+
+        <h3>Why Developers Choose VS Code</h3>
+        <p>With over <strong>20 million active users</strong>, VS Code dominates because it strikes the perfect balance between power and simplicity. Whether you're a freelancer building solo projects or part of a Fortune 500 development team, VS Code adapts to your needs without becoming bloated.</p>
+
+        <div class="vscode-link">
+          <p>Download VS Code: <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code Official</a></p>
+        </div>
+          </section>
+      <section id="hero3" class="hero3 section">
+        <h1>LinkedIn</h1>
+        <p>
+            <strong>LinkedIn: Your Professional Developer Brand</strong>
+            <br />
+            <em>Transform your technical skills into career opportunities through strategic professional networking.</em>
+        </p>
+
+        <h2>1. Profile Optimization & Branding</h2>
+        <p>Your LinkedIn profile is your professional resume and portfolio combined.</p>
+        <ul>
+            <li><strong>Professional Headline:</strong> Use high-traffic keywords like "Full Stack Developer | React & Node.js | GitHub Contributor | Open Source Enthusiast"</li>
+            <li><strong>Profile Photo:</strong> Professional headshot with good lighting and neutral background.</li>
+            <li><strong>Banner Image:</strong> Custom banner showcasing your tech stack or portfolio projects.</li>
+            <li><strong>About Section:</strong> Tell your developer story. Explain problems you've solved, technologies you've mastered, and your commitment to clean code and the GitHub Flow.</li>
+            <li><strong>Custom URL:</strong> Customize your LinkedIn URL to `linkedin.com/in/yourname` for easy sharing.</li>
+        </ul>
+
+        <h2>Top 30 Tech Companies Hiring Developers</h2>
+        <div class="companies-grid">
+            <div class="company-card">
+            <div class="company-logo-wrapper">
+                <svg class="company-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" fill="#4285F4"/>
+                <text x="50" y="60" text-anchor="middle" font-size="40" fill="white" font-weight="bold">G</text>
+                </svg>
+            </div>
+            <h3>Google</h3>
+            <p><strong>Job Title:</strong> Senior Full Stack Engineer</p>
+            <p><strong>Description:</strong> Build scalable applications and work on projects impacting billions of users.</p>
+            </div>
+            <div class="company-card">
+            <div class="company-logo-wrapper">
+                <svg class="company-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" fill="#00A4EF"/>
+                <text x="50" y="60" text-anchor="middle" font-size="35" fill="white" font-weight="bold">MS</text>
+                </svg>
+            </div>
+            <h3>Microsoft</h3>
+            <p><strong>Job Title:</strong> Cloud Solutions Architect</p>
+            <p><strong>Description:</strong> Design and implement cloud infrastructure solutions using Azure.</p>
+            </div>
+            <div class="company-card">
+            <div class="company-logo-wrapper">
+                <svg class="company-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" fill="#555555"/>
+                <text x="50" y="60" text-anchor="middle" font-size="40" fill="white" font-weight="bold">A</text>
+                </svg>
+            </div>
+            <h3>Apple</h3>
+            <p><strong>Job Title:</strong> iOS Developer</p>
+            <p><strong>Description:</strong> Create innovative applications for Apple's ecosystem.</p>
+            </div>
+            <div class="company-card">
+            <div class="company-logo-wrapper">
+                <svg class="company-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" fill="#FF9900"/>
+                <text x="50" y="60" text-anchor="middle" font-size="40" fill="white" font-weight="bold">A</text>
+                </svg>
+            </div>
+            <h3>Amazon</h3>
+            <p><strong>Job Title:</strong> Backend Engineer</p>
+            <p><strong>Description:</strong> Develop and maintain large-scale distributed systems.</p>
+            </div>
+            <div class="company-card">
+            <div class="company-logo-wrapper">
+                <svg class="company-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" fill="#1877F2"/>
+                <text x="50" y="60" text-anchor="middle" font-size="35" fill="white" font-weight="bold">f</text>
+                </svg>
+            </div>
+            <h3>Meta</h3>
+            <p><strong>Job Title:</strong> React Developer</p>
+            <p><strong>Description:</strong> Build user interfaces for billions of users worldwide.</p>
+            </div>
+            <div class="company-card">
+            <div class="company-logo-wrapper">
+                <svg class="company-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" fill="#E82127"/>
+                <text x="50" y="60" text-anchor="middle" font-size="40" fill="white" font-weight="bold">T</text>
+                </svg>
+            </div>
+            <h3>Tesla</h3>
+            <p><strong>Job Title:</strong> Embedded Systems Engineer</p>
+            <p><strong>Description:</strong> Develop firmware and software for autonomous vehicles.</p>
+            </div>
+            <div class="company-card">
+            <div class="company-logo-wrapper">
+                <svg class="company-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" fill="#76B900"/>
+                <text x="50" y="60" text-anchor="middle" font-size="40" fill="white" font-weight="bold">N</text>
+                </svg>
+            </div>
+            <h3>Nvidia</h3>
+            <p><strong>Job Title:</strong> CUDA Software Engineer</p>
+            <p><strong>Description:</strong> Optimize GPU computing applications for AI and graphics.</p>
+            </div>
+            <div class="company-card">
+            <div class="company-logo-wrapper">
+                <svg class="company-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" fill="#0071C5"/>
+                <text x="50" y="60" text-anchor="middle" font-size="40" fill="white" font-weight="bold">I</text>
+                </svg>
+            </div>
+            <h3>Intel</h3>
+            <p><strong>Job Title:</strong> Hardware Software Integration Engineer</p>
+            <p><strong>Description:</strong> Work on processor optimization and system design.</p>
+            </div>
+            <div class="company-card">
+            <div class="company-logo-wrapper">
+                <svg class="company-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" fill="#054784"/>
+                <text x="50" y="60" text-anchor="middle" font-size="40" fill="white" font-weight="bold">IBM</text>
+                </svg>
+            </div>
+            <h3>IBM</h3>
+            <p><strong>Job Title:</strong> Enterprise Java Developer</p>
+            <p><strong>Description:</strong> Build robust enterprise applications for Fortune 500 clients.</p>
+            </div>
+            <div class="company-card">
+            <div class="company-logo-wrapper">
+                <svg class="company-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" fill="#F80000"/>
+                <text x="50" y="60" text-anchor="middle" font-size="40" fill="white" font-weight="bold">O</text>
+                </svg>
+            </div>
+            <h3>Oracle</h3>
+            <p><strong>Job Title:</strong> Database Engineer</p>
+            <p><strong>Description:</strong> Design and optimize database systems for large enterprises.</p>
+            </div>
+            <div class="company-card">
+            <div class="company-logo-wrapper">
+                <svg class="company-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" fill="#00A1DE"/>
+                <text x="50" y="60" text-anchor="middle" font-size="35" fill="white" font-weight="bold">SF</text>
+                </svg>
+            </div>
+            <h3>Salesforce</h3>
+            <p><strong>Job Title:</strong> Lightning Developer</p>
+            <p><strong>Description:</strong> Create custom solutions on the Salesforce platform.</p>
+            </div>
+            <div class="company-card">
+            <div class="company-logo-wrapper">
+                <svg class="company-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" fill="#0B5CFF"/>
+                <text x="50" y="60" text-anchor="middle" font-size="40" fill="white" font-weight="bold">Z</text>
+                </svg>
+            </div>
+            <h3>Zoom</h3>
+            <p><strong>Job Title:</strong> Video Engineer</p>
+            <p><strong>Description:</strong> Develop video conferencing infrastructure and features.</p>
+            </div>
+            <div class="company-card">
+            <div class="company-logo-wrapper">
+                <svg class="company-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" fill="#FF5A5F"/>
+                <text x="50" y="60" text-anchor="middle" font-size="35" fill="white" font-weight="bold">AB</text>
+                </svg>
+            </div>
+            <h3>Airbnb</h3>
+            <p><strong>Job Title:</strong> Frontend Engineer</p>
+            <p><strong>Description:</strong> Create seamless user experiences for travelers worldwide.</p>
+            </div>
+            <div class="company-card">
+            <div class="company-logo-wrapper">
+                <svg class="company-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" fill="#000000"/>
+                <text x="50" y="60" text-anchor="middle" font-size="40" fill="white" font-weight="bold">U</text>
+                </svg>
+            </div>
+            <h3>Uber</h3>
+            <p><strong>Job Title:</strong> Mobile Engineer</p>
+            <p><strong>Description:</strong> Build mobile applications for ride-sharing and delivery services.</p>
+            </div>
+            <div class="company-card">
+            <div class="company-logo-wrapper">
+                <svg class="company-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" fill="#221F1F"/>
+                <text x="50" y="60" text-anchor="middle" font-size="35" fill="#E50914" font-weight="bold">N</text>
+                </svg>
+            </div>
+            <h3>Netflix</h3>
+            <p><strong>Job Title:</strong> Streaming Platform Engineer</p>
+            <p><strong>Description:</strong> Optimize video streaming and platform scalability.</p>
+            </div>
+            <div class="company-card">
+            <div class="company-logo-wrapper">
+                <svg class="company-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" fill="#1DB954"/>
+                <text x="50" y="60" text-anchor="middle" font-size="40" fill="white" font-weight="bold">S</text>
+                </svg>
+            </div>
+            <h3>Spotify</h3>
+            <p><strong>Job Title:</strong> Audio Engineer</p>
+            <p><strong>Description:</strong> Develop music streaming and recommendation algorithms.</p>
+            </div>
+            <div class="company-card">
+            <div class="company-logo-wrapper">
+                <svg class="company-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" fill="#0A66C2"/>
+                <text x="50" y="60" text-anchor="middle" font-size="30" fill="white" font-weight="bold">in</text>
+                </svg>
+            </div>
+            <h3>LinkedIn</h3>
+            <p><strong>Job Title:</strong> Software Engineer</p>
+            <p><strong>Description:</strong> Build professional networking features at scale.</p>
+            </div>
+            <div class="company-card">
+            <div class="company-logo-wrapper">
+                <svg class="company-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" fill="#1DA1F2"/>
+                <text x="50" y="60" text-anchor="middle" font-size="40" fill="white" font-weight="bold">𝕏</text>
+                </svg>
+            </div>
+            <h3>X (Twitter)</h3>
+            <p><strong>Job Title:</strong> Backend Engineer</p>
+            <p><strong>Description:</strong> Handle real-time data streams and infrastructure.</p>
+            </div>
+            <div class="company-card">
+            <div class="company-logo-wrapper">
+                <svg class="company-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" fill="#FF0000"/>
+                <text x="50" y="60" text-anchor="middle" font-size="40" fill="white" font-weight="bold">A</text>
+                </svg>
+            </div>
+            <h3>Adobe</h3>
+            <p><strong>Job Title:</strong> Creative Cloud Developer</p>
+            <p><strong>Description:</strong> Build tools for designers and content creators.</p>
+            </div>
+            <div class="company-card">
+            <div class="company-logo-wrapper">
+                <svg class="company-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" fill="#0052CC"/>
+                <text x="50" y="60" text-anchor="middle" font-size="35" fill="white" font-weight="bold">At</text>
+                </svg>
+            </div>
+            <h3>Atlassian</h3>
+            <p><strong>Job Title:</strong> DevOps Engineer</p>
+            <p><strong>Description:</strong> Develop developer tools and collaboration software.</p>
+            </div>
+            <div class="company-card">
+            <div class="company-logo-wrapper">
+                <svg class="company-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" fill="#1e1e1e"/>
+                <text x="50" y="60" text-anchor="middle" font-size="40" fill="#ffffff" font-weight="bold">GH</text>
+                </svg>
+            </div>
+            <h3>GitHub</h3>
+            <p><strong>Job Title:</strong> Full Stack Engineer</p>
+            <p><strong>Description:</strong> Build features for the world's largest developer platform.</p>
+            </div>
+            <div class="company-card">
+            <div class="company-logo-wrapper">
+                <svg class="company-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" fill="#08519C"/>
+                <text x="50" y="60" text-anchor="middle" font-size="35" fill="white" font-weight="bold">ST</text>
+                </svg>
+            </div>
+            <h3>Stripe</h3>
+            <p><strong>Job Title:</strong> Payment Systems Engineer</p>
+            <p><strong>Description:</strong> Develop payment processing and financial infrastructure.</p>
+            </div>
+            <div class="company-card">
+            <div class="company-logo-wrapper">
+                <svg class="company-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" fill="#96C61B"/>
+                <text x="50" y="60" text-anchor="middle" font-size="35" fill="white" font-weight="bold">Sh</text>
+                </svg>
+            </div>
+            <h3>Shopify</h3>
+            <p><strong>Job Title:</strong> Platform Engineer</p>
+            <p><strong>Description:</strong> Build e-commerce platforms and merchant tools.</p>
+            </div>
+            <div class="company-card">
+            <div class="company-logo-wrapper">
+                <svg class="company-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" fill="#E01E5A"/>
+                <text x="50" y="60" text-anchor="middle" font-size="40" fill="white" font-weight="bold">S</text>
+                </svg>
+            </div>
+            <h3>Slack</h3>
+            <p><strong>Job Title:</strong> Messaging Engineer</p>
+            <p><strong>Description:</strong> Develop communication and collaboration features.</p>
+            </div>
+            <div class="company-card">
+            <div class="company-logo-wrapper">
+                <svg class="company-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" fill="#000000"/>
+                <text x="50" y="60" text-anchor="middle" font-size="40" fill="white" font-weight="bold">F</text>
+                </svg>
+            </div>
+            <h3>Figma</h3>
+            <p><strong>Job Title:</strong> Design Tools Engineer</p>
+            <p><strong>Description:</strong> Build collaborative design software with real-time rendering.</p>
+            </div>
+            <div class="company-card">
+            <div class="company-logo-wrapper">
+                <svg class="company-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" fill="#0061FF"/>
+                <text x="50" y="60" text-anchor="middle" font-size="35" fill="white" font-weight="bold">Db</text>
+                </svg>
+            </div>
+            <h3>Dropbox</h3>
+            <p><strong>Job Title:</strong> Cloud Storage Engineer</p>
+            <p><strong>Description:</strong> Develop file synchronization and storage infrastructure.</p>
+            </div>
+            <div class="company-card">
+            <div class="company-logo-wrapper">
+                <svg class="company-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" fill="#157EFB"/>
+                <text x="50" y="60" text-anchor="middle" font-size="40" fill="white" font-weight="bold">B</text>
+                </svg>
+            </div>
+            <h3>Box</h3>
+            <p><strong>Job Title:</strong> Enterprise Content Platform Engineer</p>
+            <p><strong>Description:</strong> Build content management solutions for enterprises.</p>
+            </div>
+            <div class="company-card">
+            <div class="company-logo-wrapper">
+                <svg class="company-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" fill="#0049A3"/>
+                <text x="50" y="60" text-anchor="middle" font-size="35" fill="white" font-weight="bold">As</text>
+                </svg>
+            </div>
+            <h3>Asana</h3>
+            <p><strong>Job Title:</strong> Fullstack Engineer</p>
+            <p><strong>Description:</strong> Develop project management and productivity tools.</p>
+            </div>
+            <div class="company-card">
+            <div class="company-logo-wrapper">
+                <svg class="company-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" fill="#000000"/>
+                <text x="50" y="60" text-anchor="middle" font-size="40" fill="white" font-weight="bold">N</text>
+                </svg>
+            </div>
+            <h3>Notion</h3>
+            <p><strong>Job Title:</strong> Product Engineer</p>
+            <p><strong>Description:</strong> Build all-in-one workspace and collaboration tools.</p>
+            </div>
+            <div class="company-card">
+            <div class="company-logo-wrapper">
+                <svg class="company-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" fill="#F22F46"/>
+                <text x="50" y="60" text-anchor="middle" font-size="35" fill="white" font-weight="bold">Tw</text>
+                </svg>
+            </div>
+            <h3>Twilio</h3>
+            <p><strong>Job Title:</strong> Communications Platform Engineer</p>
+            <p><strong>Description:</strong> Develop APIs for SMS, voice, and video communications.</p>
+            </div>
+        </div>
+
+        <h2>2. Featured Section & Portfolio Integration</h2>
+        <p>Visually showcase your best work directly on your profile.</p>
+        <ul>
+            <li><strong>GitHub Repository Links:</strong> Pin your 3-5 best projects with live GitHub links.</li>
+            <li><strong>Portfolio Website:</strong> Link to your GitHub Pages hosted website (e.g., `username.github.io`).</li>
+            <li><strong>Project Thumbnails:</strong> Use screenshots of live projects or GitHub contribution graphs.</li>
+            <li><strong>Descriptions:</strong> Write compelling captions explaining the technology stack and impact of each project.</li>
+            <li><strong>Live Demos:</strong> Include links to deployed applications using GitHub Pages or hosting platforms.</li>
+        </ul>
+
+        <h2>3. Experience & Skills Section</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Section</th>
+                <th>What to Include</th>
+                <th>LinkedIn Impact</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><strong>Experience</strong></td>
+                <td>Internships, freelance projects, open source contributions</td>
+                <td>Shows practical work history</td>
+            </tr>
+            <tr>
+                <td><strong>Skills & Endorsements</strong></td>
+                <td>JavaScript, React, Node.js, Python, Git, GitHub, VS Code</td>
+                <td>Endorsements boost search ranking</td>
+            </tr>
+            <tr>
+                <td><strong>Certifications</strong></td>
+                <td>GitHub Copilot, Coursera courses, AWS certifications</td>
+                <td>Verified badges increase credibility</td>
+            </tr>
+            <tr>
+                <td><strong>Recommendations</strong></td>
+                <td>Ask peers and mentors to write recommendations</td>
+                <td>Social proof for recruiters</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <h2>4. Skill Assessments & Verification</h2>
+        <p>LinkedIn offers technical skill quizzes to verify your expertise.</p>
+        <ul>
+            <li><strong>Available Assessments:</strong> JavaScript, Python, Java, React, HTML, CSS, Git, SQL.</li>
+            <li><strong>Verified Badge:</strong> Pass assessments to display a "Verified Badge" next to your skill.</li>
+            <li><strong>Search Ranking:</strong> Verified skills rank you higher in recruiter searches.</li>
+            <li><strong>Competitive Advantage:</strong> Shows you can validate your knowledge, not just claim it.</li>
+        </ul>
+
+        <h2>5. Content Strategy & Engagement</h2>
+        <p>Build your brand by sharing your learning journey.</p>
+        <ul>
+            <li><strong>Share GitHub Milestones:</strong> Post when you complete major projects or reach contribution streaks.</li>
+            <li><strong>Technical Posts:</strong> Share code snippets, lessons learned, or best practices you discovered in VS Code.</li>
+            <li><strong>Learning Updates:</strong> Post screenshots of completed courses, certifications, or complex features you mastered.</li>
+            <li><strong>Engage with Content:</strong> Comment on posts from developers at target companies and thought leaders.</li>
+            <li><strong>Consistency:</strong> Aim for 2-3 posts per week to stay visible in recruiter feeds.</li>
+        </ul>
+
+        <h2>6. Strategic Networking</h2>
+        <ul>
+            <li><strong>Company Targeting:</strong> Follow engineering teams at companies on your dream list.</li>
+            <li><strong>Personalized Connection Requests:</strong> Always include a note mentioning a specific GitHub project or post you admired.</li>
+            <li><strong>Recruiter Engagement:</strong> Allow recruiter messages and respond professionally within 24 hours.</li>
+            <li><strong>Community Participation:</strong> Join LinkedIn groups for JavaScript developers, React enthusiasts, etc.</li>
+            <li><strong>Informational Interviews:</strong> Request 15-minute calls with developers at target companies to learn about their tech stack.</li>
+        </ul>
+
+        <h2>7. Resume Optimization</h2>
+        <p>Your LinkedIn profile should mirror a professional resume with additional visual elements.</p>
+        <table>
+            <thead>
+            <tr>
+                <th>Resume Section</th>
+                <th>How to Implement on LinkedIn</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><strong>Contact Information</strong></td>
+                <td>Email, phone, GitHub URL, portfolio website in About section</td>
+            </tr>
+            <tr>
+                <td><strong>Professional Summary</strong></td>
+                <td>About section (150-220 words with keywords)</td>
+            </tr>
+            <tr>
+                <td><strong>Technical Skills</strong></td>
+                <td>Endorsed skills section with verification badges</td>
+            </tr>
+            <tr>
+                <td><strong>Projects & Portfolio</strong></td>
+                <td>Featured section with GitHub repos and live links</td>
+            </tr>
+            <tr>
+                <td><strong>Work Experience</strong></td>
+                <td>Experience section with quantifiable achievements</td>
+            </tr>
+            <tr>
+                <td><strong>Education</strong></td>
+                <td>Education section with coursework highlights</td>
+            </tr>
+            <tr>
+                <td><strong>Certifications</strong></td>
+                <td>Certifications section with LinkedIn verification</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <h2>8. Pro Tips for Maximum Impact</h2>
+        <ul>
+            <li><strong>Keyword Optimization:</strong> Use industry terms in your headline, about, and posts to improve visibility in recruiter searches.</li>
+            <li><strong>Rich Media:</strong> Upload videos of your projects, GitHub contribution graphs, or code walkthroughs.</li>
+            <li><strong>Analytics Tracking:</strong> LinkedIn shows you how many recruiters viewed your profile each week.</li>
+            <li><strong>Open to Work:</strong> Set your status to "Open to Work" to signal availability to recruiters.</li>
+            <li><strong>Consistent Branding:</strong> Use the same profile photo across GitHub, LinkedIn, and your portfolio website.</li>
+            <li><strong>Monthly Updates:</strong> Update your headline and about section as you learn new technologies.</li>
+        </ul>
+
+        <h3>The "Golden Rule" of LinkedIn for Developers</h3>
+        <p><strong>Your LinkedIn profile should tell the story of your GitHub journey.</strong> Every commit, every Pull Request, every successful merge tells a story of growth. Transform that technical narrative into a professional brand that makes recruiters compete to hire you.</p>
+
+        <div class="linkedin-link">
+            <p>Build your LinkedIn profile: <a href="https://www.linkedin.com/" target="_blank">LinkedIn Official</a></p>
+        </div>
+</section>
+<section id="hero4" class="hero4">
+        <h1>Fullstack API Process</h1>
+        <p>API integration is the process of connecting your website to a third-party server or your own backend to exchange data. Think of an API (Application Programming Interface) as a **waiter** in a restaurant: you (the website) give the waiter an order (the request), the waiter goes to the kitchen (the server/database), and brings back your food (the data).</p>
+
+        <p>To integrate an API successfully, you must follow a specific sequence of technical steps.</p>
+
+        <h2>1. Research and Authentication</h2>
+        <p>Before writing code, you must understand how to "talk" to the API. Every professional API has **documentation** (the manual) that explains the available endpoints and the data they return.</p>
+        <ul>
+          <li><strong>Endpoint:</strong> The URL where the data lives (e.g., <code>api.weather.com/v1/current</code>).</li>
+          <li><strong>API Key:</strong> Most APIs require a secret key to identify you. You must sign up on the provider's website to get this.</li>
+          <li><strong>Security:</strong> Never hardcode your API key directly in your frontend JavaScript. Use a <code>.env</code> file to keep it secret.</li>
+        </ul>
+
+        <h2>2. The Request (Client to Server)</h2>
+        <p>Your website sends a "Request" to the API. This is usually done using the **Fetch API** in JavaScript or a library like **Axios**.</p>
+        <ul>
+          <li><strong>Methods:</strong> You must choose the right action.</li>
+          <li><code>GET</code>: To receive data (like fetching a weather report).</li>
+          <li><code>POST</code>: To send data (like submitting a contact form).</li>
+          <li><code>PUT/PATCH</code>: To update existing data.</li>
+          <li><code>DELETE</code>: To remove data.</li>
+          <li><strong>Headers:</strong> This is "metadata" sent with the request, usually containing your API Key and the content type (e.g., <code>application/json</code>).</li>
+        </ul>
+
+        <h2>3. The Processing (The Server Side)</h2>
+        <p>Once the API receives your request, it performs several checks before sending anything back:</p>
+        <ul>
+          <li><strong>Validation:</strong> It checks if your API key is valid and if you have permission to access that data.</li>
+          <li><strong>Database Query:</strong> If authorized, the API "searches" its database for the information you asked for.</li>
+          <li><strong>Logic:</strong> It might perform calculations (e.g., converting temperature from Celsius to Fahrenheit) before preparing the final package.</li>
+        </ul>
+
+        <h2>4. The Response (Server to Client)</h2>
+        <p>The API sends back a "Response." This package almost always arrives in **JSON** (JavaScript Object Notation) format, which is easy for both humans and computers to read.</p>
+        <ul>
+          <li><strong>Status Codes:</strong> The response includes a number that tells you if it worked:</li>
+          <li><code>200 OK</code>: Everything went perfectly.</li>
+          <li><code>401 Unauthorized</code>: Your API key is wrong.</li>
+          <li><code>404 Not Found</code>: The data you asked for doesn't exist.</li>
+          <li><code>500 Server Error</code>: The API's server is broken.</li>
+        </ul>
+
+        <h2>5. Data Parsing and UI Update</h2>
+        <p>The final step happens back on your website. Once the JSON data arrives, you must "parse" it and inject it into your HTML.</p>
+        <ul>
+          <li><strong>Mapping:</strong> You take specific pieces of the JSON (like <code>data.temperature</code>) and assign them to your HTML elements (like a <code>&lt;div&gt;</code> or <code>&lt;h1&gt;</code>).</li>
+          <li><strong>Error Handling:</strong> You must write code to handle failures. If the API is down, your website should show a friendly "Please try again later" message instead of just crashing.</li>
+          <li><strong>Loading States:</strong> Since API calls take a few seconds, you should show a "loading spinner" to let the user know the data is on its way.</li>
+        </ul>
+
+        <h2>Summary Checklist for Integration:</h2>
+        <ol>
+          <li><strong>Get the API Key</strong> from the provider.</li>
+          <li><strong>Test the Endpoint</strong> using a tool like Postman to see what the data looks like.</li>
+          <li><strong>Write the Fetch Function</strong> in your JavaScript.</li>
+          <li><strong>Secure the Key</strong> using environment variables.</li>
+          <li><strong>Render the Data</strong> into your website's UI using DOM manipulation.</li>
+        </ol>
+
+        <h2>Free API Links for Practice:</h2>
+        <ul>
+          <li><a href="https://jsonplaceholder.typicode.com/" target="_blank">JSONPlaceholder (Fake Online REST API)</a></li>
+          <li><a href="https://api.openweathermap.org/" target="_blank">OpenWeatherMap (Weather Data)</a></li>
+          <li><a href="https://api.coindesk.com/v1/bpi/currentprice.json" target="_blank">CoinDesk (Bitcoin Price Index)</a></li>
+          <li><a href="https://dog.ceo/dog-api/" target="_blank">Dog API (Random Dog Images)</a></li>
+          <li><a href="https://catfact.ninja/" target="_blank">Cat Facts API (Random Cat Facts)</a></li>
+          <li><a href="https://api.agify.io/" target="_blank">Agify (Predict Age from Name)</a></li>
+          <li><a href="https://api.genderize.io/" target="_blank">Genderize (Predict Gender from Name)</a></li>
+          <li><a href="https://api.nasa.gov/" target="_blank">NASA API (Space Data)</a></li>
+          <li><a href="https://www.thecocktaildb.com/api.php" target="_blank">TheCocktailDB (Cocktail Recipes)</a></li>
+          <li><a href="https://newsapi.org/" target="_blank">News API (Latest News Articles)</a></li>
+          
+          <!-- Image APIs -->
+          <li><a href="https://unsplash.com/api/" target="_blank">Unsplash (Free Stock Images)</a></li>
+          <li><a href="https://www.pexels.com/api/" target="_blank">Pexels (Free Stock Photos)</a></li>
+          <li><a href="https://pixabay.com/api/" target="_blank">Pixabay (Images & Videos)</a></li>
+          <li><a href="https://www.flickr.com/services/api/" target="_blank">Flickr (Photo Data)</a></li>
+          <li><a href="https://www.mapillary.com/developer/api-documentation/" target="_blank">Mapillary (Street View Images)</a></li>
+          
+          <!-- Video APIs -->
+          <li><a href="https://developers.google.com/youtube/v3" target="_blank">YouTube Data API (Videos)</a></li>
+          <li><a href="https://rapidapi.com/api-league/api/free-to-play-games-database" target="_blank">Game Video Trailers API</a></li>
+          
+          <!-- Audio APIs -->
+          <li><a href="https://www.last.fm/api" target="_blank">Last.fm (Music Data)</a></li>
+          <li><a href="https://developer.spotify.com/documentation/web-api/" target="_blank">Spotify Web API (Music Tracks)</a></li>
+          <li><a href="https://www.deezer.com/developers" target="_blank">Deezer (Music & Podcasts)</a></li>
+          
+          <!-- Text & Language APIs -->
+          <li><a href="https://api.jikan.moe/v4" target="_blank">Jikan (Anime & Manga Data)</a></li>
+          <li><a href="https://www.gutendex.com/books" target="_blank">Gutendex (Free Books API)</a></li>
+          <li><a href="https://api.adviceslip.com/" target="_blank">Advice Slip (Random Quotes)</a></li>
+          <li><a href="https://quotable.io/" target="_blank">Quotable (Famous Quotes)</a></li>
+          <li><a href="https://pokeapi.co/" target="_blank">PokéAPI (Pokemon Data)</a></li>
+          
+          <!-- Geographic & Location Data -->
+          <li><a href="https://restcountries.com/" target="_blank">REST Countries (Country Data)</a></li>
+          <li><a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap (Maps & Geolocation)</a></li>
+          <li><a href="https://geokdbcities-api.p.rapidapi.com/" target="_blank">GeoDB Cities (City Information)</a></li>
+          
+          <!-- Movie & TV APIs -->
+          <li><a href="https://www.themoviedb.org/settings/api" target="_blank">The Movie Database (Movies & TV Shows)</a></li>
+          <li><a href="https://www.omdbapi.com/" target="_blank">OMDb (Movie Information)</a></li>
+          <li><a href="https://www.tvmaze.com/api" target="_blank">TVMaze (TV Show Data)</a></li>
+          
+          <!-- Sports Data -->
+          <li><a href="https://www.api-football.com/" target="_blank">API-Football (Soccer/Football Data)</a></li>
+          <li><a href="https://www.balldontlie.io/" target="_blank">Ball Don't Lie (NBA Basketball Data)</a></li>
+          
+          <!-- Health & Science -->
+          <li><a href="https://disease.sh/" target="_blank">Disease.sh (COVID-19 & Disease Data)</a></li>
+          <li><a href="https://api.calorieninjas.com/" target="_blank">Calorie Ninjas (Food & Nutrition Data)</a></li>
+          
+          <!-- Comics & Entertainment -->
+          <li><a href="https://developer.marvel.com/" target="_blank">Marvel API (Comics & Characters)</a></li>
+          <li><a href="https://rickandmortyapi.com/" target="_blank">Rick and Morty API (Character Data)</a></li>
+          
+          <!-- Cryptocurrency & Finance -->
+          <li><a href="https://coingecko.com/en/api/" target="_blank">CoinGecko (Crypto Data)</a></li>
+          <li><a href="https://min-api.cryptocompare.com/" target="_blank">CryptoCompare (Cryptocurrency Prices)</a></li>
+          
+          <!-- Weather & Environment -->
+          <li><a href="https://open-meteo.com/" target="_blank">Open-Meteo (Weather Data - No Key)</a></li>
+          
+          <!-- Dictionary & Language -->
+          <li><a href="https://api.dictionaryapi.dev/" target="_blank">Dictionary API (Word Definitions)</a></li>
+          <li><a href="https://www.weatherapi.com/" target="_blank">WeatherAPI (Weather & Timezone)</a></li>
+          
+          <!-- Random Data Generators -->
+          <li><a href="https://randomuser.me/api/" target="_blank">Random User (Random User Profiles)</a></li>
+          <li><a href="https://api.genderize.io/" target="_blank">Faker API (Fake Data Generation)</a></li>
+          <li><a href="https://this-person-does-not-exist.com/en" target="_blank">Generated Photos (AI Portraits)</a></li>
+          
+          <!-- Email & Validation -->
+          <li><a href="https://hunter.io/api/" target="_blank">Hunter.io (Email Finder)</a></li>
+          
+          <!-- Placeholder Data -->
+          <li><a href="https://placekitten.com/" target="_blank">PlaceKitten (Placeholder Cat Images)</a></li>
+          <li><a href="https://www.boredapi.com/" target="_blank">Bored API (Activity Suggestions)</a></li>
+        </ul>
+
+        <p>Would you like me to write a <strong>simple JavaScript Fetch code snippet</strong> for a real-world API (like a weather or crypto API) that you can copy and paste into your VS Code?</p>
+      </section>
+       <section id="hero6" class="hero6 section">
+  <div class="section-content">
+    <h1>Top 50 Programming Languages</h1>
+    <p class="section-intro">Explore the most influential programming languages shaping the future of technology, development, and innovation.</p>
+    
+    <!-- Language Categories Filter -->
+    <div class="filter-controls">
+      <button class="filter-btn active" data-filter="all">All Languages</button>
+      <button class="filter-btn" data-filter="general">General Purpose</button>
+      <button class="filter-btn" data-filter="web">Web Development</button>
+      <button class="filter-btn" data-filter="mobile">Mobile</button>
+      <button class="filter-btn" data-filter="data">Data Science/AI</button>
+      <button class="filter-btn" data-filter="system">System</button>
+      <button class="filter-btn" data-filter="functional">Functional</button>
+    </div>
+    
+    <!-- Search Box -->
+    <div class="search-container">
+      <input type="text" id="languageSearch" placeholder="Search programming languages..." class="search-input">
+      <i class="fas fa-search search-icon"></i>
+    </div>
+    
+    <!-- Programming Languages Grid -->
+    <div class="languages-grid" id="languagesGrid">
+      <!-- Languages will be populated by JavaScript -->
+    </div>
+    
+    <!-- Statistics Section -->
+    <div class="statistics-section">
+      <h2>Programming Language Statistics 2024</h2>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number">1.1M+</div>
+          <div class="stat-label">Open Source Projects</div>
+          <div class="stat-desc">On GitHub across all languages</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">28.7M</div>
+          <div class="stat-label">Developers Worldwide</div>
+          <div class="stat-desc">Professional software developers</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">$500B+</div>
+          <div class="stat-label">Software Market</div>
+          <div class="stat-desc">Annual global software market</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">52%</div>
+          <div class="stat-label">Web Developers</div>
+          <div class="stat-desc">JavaScript remains most popular</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Language Comparison Table -->
+    <div class="comparison-section">
+      <h2>Language Comparison Table</h2>
+      <div class="table-container">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Language</th>
+              <th>Type</th>
+              <th>Difficulty</th>
+              <th>Job Demand</th>
+              <th>Avg Salary (US)</th>
+              <th>Learning Curve</th>
+            </tr>
+          </thead>
+          <tbody id="comparisonTable">
+            <!-- Table will be populated by JavaScript -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    
+    <!-- Learning Path Recommendations -->
+    <div class="learning-paths">
+      <h2>Recommended Learning Paths</h2>
+      <div class="paths-grid">
+        <div class="path-card">
+          <div class="path-icon">
+            <i class="fas fa-globe"></i>
+          </div>
+          <h3>Web Development</h3>
+          <div class="path-languages">
+            <span class="lang-tag">HTML/CSS</span>
+            <span class="lang-tag">JavaScript</span>
+            <span class="lang-tag">React</span>
+            <span class="lang-tag">Node.js</span>
+          </div>
+          <p>Build full-stack web applications from scratch</p>
+          <a href="#" class="path-link">Start Learning →</a>
+        </div>
+        <div class="path-card">
+          <div class="path-icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h3>Mobile Development</h3>
+          <div class="path-languages">
+            <span class="lang-tag">Swift</span>
+            <span class="lang-tag">Kotlin</span>
+            <span class="lang-tag">React Native</span>
+            <span class="lang-tag">Flutter</span>
+          </div>
+          <p>Create cross-platform mobile applications</p>
+          <a href="#" class="path-link">Start Learning →</a>
+        </div>
+        <div class="path-card">
+          <div class="path-icon">
+            <i class="fas fa-brain"></i>
+          </div>
+          <h3>Data Science & AI</h3>
+          <div class="path-languages">
+            <span class="lang-tag">Python</span>
+            <span class="lang-tag">R</span>
+            <span class="lang-tag">Julia</span>
+            <span class="lang-tag">SQL</span>
+          </div>
+          <p>Master data analysis and machine learning</p>
+          <a href="#" class="path-link">Start Learning →</a>
+        </div>
+        <div class="path-card">
+          <div class="path-icon">
+            <i class="fas fa-server"></i>
+          </div>
+          <h3>Backend Systems</h3>
+          <div class="path-languages">
+            <span class="lang-tag">Java</span>
+            <span class="lang-tag">Go</span>
+            <span class="lang-tag">C#</span>
+            <span class="lang-tag">Rust</span>
+          </div>
+          <p>Develop scalable server-side applications</p>
+          <a href="#" class="path-link">Start Learning →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    </main>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+  </body>
+</html>
